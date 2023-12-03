@@ -22,7 +22,7 @@ export function buildWebpack(options: BuildOptions): webpack.Configuration {
       rules: buildLoaders(options),
     },
     resolve: buildResolvers(options),
-    devtool: isDev ? 'inline-source-map' : false,
+    devtool: isDev ? 'inline-source-map' : false, //Нужно искать source map под дев и прод, в зависимости от скорости билда source-map, eval-cheap-module-source-map
     devServer: isDev ? buildDevServer(options) : undefined,
   }
 }
