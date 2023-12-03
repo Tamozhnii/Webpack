@@ -7,7 +7,7 @@ export function buildDevServer(options: BuildOptions): DevServerConfiguration {
   return {
     port: options.port ?? 3001,
     // open: true,
-    historyApiFallback: true, // работает только в дев режиме, на nginxнужно проксировать в index.html
+    historyApiFallback: true, // работает только в дев режиме, на nginx нужно проксировать в index.html
     hot: isDev,
   }
 }

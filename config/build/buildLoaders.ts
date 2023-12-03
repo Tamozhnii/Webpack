@@ -5,7 +5,7 @@ import ReactRefreshTypescript from 'react-refresh-typescript'
 
 export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
   const isDev = options.mode === 'development'
-  const isProd = options.mode === 'production'
+  // const isProd = options.mode === 'production'
 
   const tsLoader = {
     test: /\.tsx?$/,
@@ -22,7 +22,7 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
   }
 
   const assetLoader = {
-    test: /\.(png|jpg|jpeg|gif)$/i,
+    test: /\.(png|jpe?g|gif)$/i,
     type: 'asset/resource',
   }
 

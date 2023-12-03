@@ -7,7 +7,7 @@ import { buildPlugins } from './buildPlugins'
 
 export function buildWebpack(options: BuildOptions): webpack.Configuration {
   const isDev = options.mode === 'development'
-  const isProd = options.mode === 'production'
+  // const isProd = options.mode === 'production'
 
   return {
     mode: options.mode ?? 'production',
